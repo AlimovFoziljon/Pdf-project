@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project pdf-js</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <h1>Pdf project</h1>
+        <nav>
+            <input type="file" id="pdf-upload" accept="application/pdf" />
+            <button id="zoom-in">Zoom In</button>
+            <span id="zoom-percent">100</span>
+            <button id="zoom-out">Zoom Out</button>
+            <button id="zoom-reset">Reset Zoom</button>
+            <button id="prev-page">Prev</button>
+            <span id="page-indicator"></span>
+            <button id="next-page">Next</button>
+        </nav>
+    </div>
+    <div id="pages"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.min.js" integrity="sha512-9Wd08apcJEwm8g3lBTg1UW/njdN0iuuOVWKpyinK3uA7ISAE5PmEZ4y8bZYTXVOE3tlt7aFlCBBLmLt5cUxe2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
